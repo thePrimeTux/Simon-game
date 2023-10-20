@@ -10,6 +10,17 @@ body {
   color: #FEF2BF;
 }
 
+.instructions{
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+ul{
+  list-style-type: none;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,6 +28,7 @@ body {
   gap:-100px;
   justify-content: space-evenly;
   width: 30%;
+  height: 600px;
   margin: auto;
 }
 
