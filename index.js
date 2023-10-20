@@ -8,7 +8,7 @@ const playAudio = ["./sounds/green.mp3",
                     "./sounds/wrong.mp3",];
 var userSeq = [];
 
-$(document).click(function (){
+$(document).on("click touch keydown",function (){
     if(lvl === 0){
         $("h1").text("Level "+lvl);
         nextSeq();
