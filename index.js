@@ -8,12 +8,14 @@ const playAudio = ["./sounds/green.mp3",
                     "./sounds/wrong.mp3",];
 var userSeq = [];
 
-$(document).on("click touch keydown",function (){
+$(document).on("touch keydown",function (){
     if(lvl === 0){
-        $("h1").text("Level "+lvl);
-        nextSeq();
+        setTimeout(function(){
+            nextSeq();
+        },400);
     }
 });
+
 
 $(".btn").on('click', function() {
     var userNo = this.id;
@@ -30,7 +32,7 @@ function check(len){
             },500);
         }
     } else{
-        $("h1").text("Game Over, Click to Restart")
+        $("h1").text("Game Over, Press any key to Restart")
         $("body").addClass("game-over");
         setTimeout(function(){
             $("body").removeClass("game-over");
