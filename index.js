@@ -8,7 +8,7 @@ const playAudio = ["./sounds/green.mp3",
                     "./sounds/wrong.mp3",];
 var userSeq = [];
 
-$(document).keydown(function (){
+$(document).click(function (){
     if(lvl === 0){
         $("h1").text("Level "+lvl);
         nextSeq();
@@ -30,7 +30,7 @@ function check(len){
             },500);
         }
     } else{
-        $("h1").text("Game Over, Press Any Key to Restart")
+        $("h1").text("Game Over, Click to Restart")
         $("body").addClass("game-over");
         setTimeout(function(){
             $("body").removeClass("game-over");
